@@ -46,7 +46,7 @@ class ReminderCommands(MixinMeta, ABC, metaclass=CompositeMetaClass):
             + r"$"
         )
 
-    @commands.group()
+    @commands.group(aliases=["reminders"])
     async def reminder(self, ctx: commands.Context):
         """Manage your reminders."""
 
