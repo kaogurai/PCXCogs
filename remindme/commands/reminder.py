@@ -235,7 +235,7 @@ class ReminderCommands(MixinMeta, ABC, metaclass=CompositeMetaClass):
         """
         await self._delete_reminder(ctx, index)
 
-    @commands.command()
+    @commands.command(aliases=["remind"])
     async def remindme(
         self, ctx: commands.Context, *, time_and_optional_text: str = ""
     ):
